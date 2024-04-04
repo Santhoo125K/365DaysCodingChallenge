@@ -1,0 +1,65 @@
+import java.util.*;
+
+public class Day1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s1 = sc.next();
+        String s2 = sc.next();
+        int k = sc.nextInt();
+
+        String s = s1 + s2;
+
+        for (char c : s.toCharArray()) {
+            if (s1.contains(Character.toString(c)) && s2.contains(Character.toString(c))) {
+                s1 = s1.replaceFirst(Character.toString(c), "");
+                s2 = s2.replaceFirst(Character.toString(c), "");
+            }
+        }
+        s = s1 + s2;
+        System.out.print(s.length() == k ? "yes" : "no");
+    }
+}
+
+/* Day1 Question ->
+
+The program must accept two string values S1 and S2 and an integer K as the input. The programmust print yes if the number of uncommon alphabets in both the string values are equal to K. Else
+the program must print no as the output.
+
+Note: The value of K is always less than or equal to the sum of the lengths of S1 and S2.
+
+Boundary Condition(s):
+1 <= Length of S1, S2 <= 1000
+
+Input Format:
+The first line contains S1, S2 and K separated by a space.
+
+Output Format:
+The first line contains yes or no.
+
+Example Input/Output 1:
+Input:
+AbcdefGh abceff 6
+
+Output:
+yes
+
+Explanation:
+Here K = 6.
+
+The uncommon alphabets in both the string values (AbcdefGh abceff) are A, d, G, h, a and f.Here the number of uncommon alphabets is 6, which is equal to K. So yes is printed as the output.
+
+Example Input/Output 2:
+Input:
+skill rack 5
+
+Output:
+no
+
+Explanation:
+Here K = 5.
+
+The uncommon alphabets in both the string values (skill rack) are s, i, I, I, r, a and c.Here the number of uncommon alphabets is 7, which is not equal to K. So no is printed as the output.
+
+Max Execution Time Limit 500 millisecs
+*/
