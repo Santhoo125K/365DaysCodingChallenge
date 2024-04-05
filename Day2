@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Day2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] words = sc.nextLine().split(" ");
+
+        for (String word : words) {
+            char start = word.charAt(0);
+            char end = word.charAt(word.length() - 1);
+            StringBuilder reversed = new StringBuilder(word.substring(1, word.length() - 1)).reverse();
+            System.out.print(start + reversed.toString() + end + " ");
+        }
+        sc.close();
+    }
+}
