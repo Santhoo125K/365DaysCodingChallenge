@@ -1,0 +1,19 @@
+import java.util.*;
+public class Day5 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        sc.nextLine();
+        String str[] = sc.nextLine().split(" ");
+
+        Arrays.sort(str, (a, b) -> (b + a).compareTo(a + b));
+        StringBuilder st = new StringBuilder();
+
+        for (String i : str) {
+            st.append(i);
+        }
+        System.out.print(st);
+    }
+}
