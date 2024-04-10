@@ -1,0 +1,25 @@
+import java.util.*;
+public class Day7 {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		String s=sc.next();
+		char ch=sc.next().charAt(0);
+		int k=sc.nextInt();
+		
+		int consicutiveCount=0, removeCount=0;
+		
+		for(int i=0;i<s.length();i++){
+		    if(s.charAt(i)==ch){
+		        consicutiveCount++;
+		        if(consicutiveCount > k){
+		            removeCount++;
+		        }
+		    }else{
+		        consicutiveCount=0;
+		    }
+		}
+		System.out.print(removeCount+1);
+	}
+}
