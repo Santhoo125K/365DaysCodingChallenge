@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Day9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.next();
+        String str1 = str;
+
+        char f = str.charAt(0), s = str.charAt(1);
+        String zeros = str.replaceAll("[^0]", ""), ones = str.replaceAll("[^1]", "");
+
+        System.out.println((zeros.length() == Character.getNumericValue(f)) && (ones.length() == Character.getNumericValue(s)) ? "YES" : "NO");
+    }
+}
