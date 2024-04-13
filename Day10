@@ -1,0 +1,26 @@
+import java.util.*;
+public class Day10 {
+
+    public static void main(String[] args) {
+		int n = new Scanner(System.in).nextInt();
+		
+		int digitSum = 0;
+		int t = n;
+		while(t > 0){
+		    digitSum += t % 10;
+		    t /= 10;
+		}
+		
+		long sum = digitSum;
+		int repetationCnt = 1, i = 1, p = 10;
+		while(p <= n){
+		    sum += digitSum * p;
+		    repetationCnt *= i;
+		    i++;
+		    p *= 10;
+		}
+		
+		System.out.print(sum * repetationCnt);
+
+	}
+}
