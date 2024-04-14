@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Day11 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int r = sc.nextInt(), c = sc.nextInt();
+        sc.nextLine();
+
+        String[][] mat = new String[r][c];
+
+        int[] length = new int[c];
+
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                mat[i][j] = sc.nextLine();
+                length[j] = Math.max(length[j], mat[i][j].length());
+            }
+        }
+
+        for (int i = 0; i < r; i++) {
+            System.out.print('|');
+            for (int j = 0; j < c; j++) {
+                System.out.print(
+                        String.format(
+                                "%-" + length[j] + "s|", mat[i][j]
+                        ).replace(' ', '*')
+                );
+            }
+            System.out.println();
+        }
+    }
+}
