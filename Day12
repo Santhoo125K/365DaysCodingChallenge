@@ -1,0 +1,16 @@
+import java.util.*;
+public class Day12 {
+
+    public static void main(String[] args) {
+        int s = new Scanner(System.in).nextInt();
+        
+        int d = s / 86400;
+        s %= 86400;
+        int h = s / 3600;
+        s %= 3600;
+        int m = s / 60;
+        s %= 60;
+        
+        System.out.format("%dD %02d:%02d:%02d", d, h, m, s);
+	}
+}
