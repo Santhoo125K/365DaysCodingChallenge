@@ -1,0 +1,27 @@
+import java.util.*;
+public class Day14 {
+
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt(), k = sc.nextInt();
+		int asc = 1, des = 1;
+		int prev = sc.nextInt();
+		boolean f = false;
+		
+		for(int i = 1; i < n; i++){
+		    int curr = sc.nextInt();
+		    asc += prev <= curr ? 1 : -asc + 1;
+		    des += prev >= curr ? 1 : -des + 1;
+		    
+		    if(asc >= k || des >= k){
+		        f = true;
+		        break;
+		    }
+		    
+		    prev = curr;
+		}
+
+		System.out.print(f ? "Yes" : "No");
+	}
+}
