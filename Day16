@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int r = sc.nextInt(), c = sc.nextInt(), mat[][] = new int[r][c];
+
+        for (int i = 0; i < r * c; i++)
+            mat[i / c][i % c] = sc.nextInt();
+
+        int k = sc.nextInt();
+
+        int[][][] freq = new int[r][c][2];
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (i > 0 && mat[i - 1][j] == mat[i][j])
+                    freq[i][j][0] = freq[i - 1][j][0] + 1;
+                else
+                    freq[i][j][0] = 1;
+
+                if (j > 0 && mat[i][j - 1] == mat[i][j])
+                    freq[i][j][1] = freq[i][j - 1][1] + 1;
+                else
+                    freq[i][j][1] = 1;
+            }
+        }
+
+        k--;
+
+        boolean f = false;
+
+        for (int i = 0; i < r - k; i++) {
+            for (int j = 0; j < c - k; j++) {
+                if (freq[i + k][j][0] > k && freq[i + k][j + k][0] > k && freq[i][j + k][1] > k && freq[i + k][j + k][1] > k)
+                    f = true;
+            }
+        }
+
+        System.out.print(f ? "YES" : "NO");
+    }
+}
