@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Hello {
+    public static void main(String[] args) {
+        int n = new Scanner(System.in).nextInt();
+
+        char[] primes = {'2', '3', '5', '7'};
+
+        StringBuilder sb = new StringBuilder();
+        while (n > 0) {
+            sb.append(primes[(n - 1) % 4]);
+            n = (n - 1) / 4;
+        }
+
+        System.out.print(sb.reverse());
+    }
+}
