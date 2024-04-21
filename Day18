@@ -1,0 +1,29 @@
+import java.util.*;
+public class Day18 {
+
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String a = sc.nextLine(), b = sc.nextLine();
+		
+		Set<Character> set1 = new HashSet<>();
+		Set<Character> set2 = new HashSet<>();
+		
+		String st1 = "", st2 = "";
+		
+		for(char c : a.toCharArray()){
+		    if(set1.add(c)){
+		        st1 += c;
+		    }
+		}
+		
+		for(char c : b.toCharArray()){
+		    if(set2.add(c)){
+		        st2 += c;
+		    }
+		}
+		
+		System.out.print(st1.equals(st2) ? "Yes" : "No");
+
+	}
+}
