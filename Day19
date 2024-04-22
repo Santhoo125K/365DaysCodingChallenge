@@ -1,0 +1,10 @@
+import java.util.*;
+public class Day19 {
+
+    public static void main(String[] args) {
+		int s = new Scanner(System.in).nextInt();
+		
+		System.out.format("%.2f",
+		    Math.sqrt(3) / 4.0 * s * s);
+	}
+}
