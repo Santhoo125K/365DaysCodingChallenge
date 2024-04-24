@@ -1,0 +1,14 @@
+import java.util.*;
+public class Day21 {
+
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Set<Integer> st1 = new HashSet<>(), st2 = new HashSet<>();
+		sc.next().chars().forEach(st1::add);
+		sc.next().chars().forEach(st2::add);
+		
+		System.out.print(st1.equals(st2) ? "yes" : "no");
+
+	}
+}
