@@ -1,0 +1,20 @@
+import java.util.*;
+public class Day23 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String in = sc.nextLine();
+        
+        Map<Character, Integer> counter = new HashMap<>();
+        for(char c : in.toCharArray()){
+            counter.put(c, counter.getOrDefault(c, 0) + 1);
+        }
+        
+        int maxCount = 0;
+        for(int count : counter.values()){
+            maxCount = Math.max(maxCount, count);
+        }
+        
+        System.out.print(maxCount);
+	}
+}
