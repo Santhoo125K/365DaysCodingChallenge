@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Day26 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String chars = "37";
+        int i = 1;
+
+        while (n != 0) {
+            int t = i;
+            ArrayList<Character> s = new ArrayList<>();
+            while (t != 0) {
+                s.add(chars.charAt((t - 1) % 2));
+                t = (t - 1) / 2;
+            }
+            ArrayList<Character> reversed = new ArrayList<>(s);
+            Collections.reverse(reversed);
+            if (s.equals(reversed)) {
+                n--;
+                if (n == 0) {
+                    for (char c : s) {
+                        System.out.print(c);
+                    }
+                    System.out.println();
+                }
+            }
+            i++;
+        }
+    }
+}
