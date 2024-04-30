@@ -1,0 +1,41 @@
+import java.util.*;
+public class Day27 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[][] mat = new int[n][n];
+        Queue<int[]> q = new LinkedList<>();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                mat[i][j] = sc.nextInt();
+                if (mat[i][j] == 0) {
+                    q.add(new int[]{i, j});
+                }
+            }
+        }
+
+        int[][] dir = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        while (!q.isEmpty()) {
+            int[] pos = q.remove();
+            int sum = 0;
+            for (int[] d : dir) {
+                int x = pos[0] + d[0], y = pos[1] + d[1];
+                if (0 <= x && x < n && 0 <= y && y < n) {
+                    sum += mat[x][y];
+                    mat[x][y] = 0;
+                }
+            }
+            mat[pos[0]][pos[1]] = sum;
+        }
+
+        for (int[] row : mat) {
+            for (int i : row) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
