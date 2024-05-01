@@ -1,0 +1,17 @@
+import java.util.*;
+import java.time.Month;
+
+public class Day28 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        sc.useDelimiter("-");
+
+        int year = sc.nextInt();
+        int monthNumber = sc.nextInt();
+
+        String month = Month.of(monthNumber).toString();
+        System.out.print(month.charAt(0) + month.substring(1).toLowerCase());
+    }
+}
