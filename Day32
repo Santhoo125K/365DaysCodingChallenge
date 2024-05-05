@@ -1,0 +1,19 @@
+import java.util.*;
+public class Day32 {
+
+    public static void main(String[] args) {
+        int n = new Scanner(System.in).nextInt();
+        
+        int setbit = 1, bitcnt = 0;
+        while((n & (setbit << 1)) != 0 || (n & setbit) == 0){
+            if((n & setbit) != 0){
+                bitcnt++;
+            }
+            setbit <<= 1;
+        }
+        
+        int toggle = (setbit << 1) | setbit;
+        int rightClearBits = Integer.MAX_VALUE ^ (setbit - 1);
+        System.out.print(((n ^ toggle) & rightClearBits) | ((1 << bitcnt) - 1));
+	}
+}
