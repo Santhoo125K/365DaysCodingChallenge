@@ -1,0 +1,29 @@
+import java.util.*;
+public class Day33 {
+    private static boolean isPalinNum(int n){
+        int rev = 0;
+        while (rev < n){
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        return rev == n || rev / 10 == n;
+    }
+    
+    private static boolean isPalinBin(int n){
+        int rev = 0;
+        while (rev < n){
+            rev = (rev << 1) | (n & 1);
+            n >>=1;
+        }
+        return rev == n || (rev >> 1) == n;
+    }
+
+    public static void main(String[] args) {
+        int n = new Scanner(System.in).nextInt();
+        
+        if(n % 10 != 0 && n % 2 != 0 && isPalinNum(n) && isPalinBin(n))
+            System.out.print("yes");
+        else
+            System.out.print("no");
+	}
+}
