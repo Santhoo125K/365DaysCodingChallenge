@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Day34 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        long x = sc.nextLong(), y = sc.nextLong();
+        int n = sc.nextInt();
+        boolean f = true;
+
+        for (; x <= y; x++) {
+            long t = x;
+            int mask = 0, cnt = 0;
+
+            while (t > 0) {
+                if ((mask & (1 << (t % 10))) == 0)
+                    cnt++;
+                mask |= (1 << (t % 10));
+                t /= 10;
+            }
+            if (cnt <= n) {
+                System.out.print(x + " ");
+                f = false;
+            }
+        }
+        if (f)
+            System.out.print(-1);
+    }
+}
