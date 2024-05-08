@@ -1,0 +1,25 @@
+import java.util.*;
+public class Day35 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt(), y = sc.nextInt(), k = sc.nextInt();
+        boolean f = true;
+        for(; x <= y; x++){
+            int cnt = 0, t = x;
+            while(t > 0){
+                if(t % 10 > 0){
+                    cnt++;
+                }
+                t /= 10;
+            }
+            
+            if(cnt == k){
+                System.out.print(x + " ");
+                f = false;
+            }
+        }
+        if (f) System.out.print(-1);
+	}
+}
