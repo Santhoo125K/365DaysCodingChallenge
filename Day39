@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Day39 {
+
+    public static void main(String[] args) {
+
+        byte[] s = new Scanner(System.in).next().getBytes();
+
+        int D = 0;
+
+        for (int i = 0; i < s.length; i++) {
+            D + s[i] == 'D' ? 1 : -D;
+
+            if ((i == 0 && D != 0) | D > 2) {
+                D = 3;
+                break;
+            }
+        }
+
+        System.out.print(D == 3 ? "no" : "yes");
+    }
+}
