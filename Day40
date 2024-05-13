@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Day40 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int M = scanner.nextInt();
+        int[][] M1 = new int[M][M];
+        for (int i = 0; i < M; i++) {
+            for (int j = 0; j < M; j++) {
+                M1[i][j] = scanner.nextInt();
+            }
+        }
+
+        int N = scanner.nextInt();
+        int[][] M2 = new int[N][N];
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                M2[i][j] = scanner.nextInt();
+            }
+        }
+
+        findAndReplace(M1, M2);
+
+        for (int i = 0; i < M; i++) {
+            for (int j = 0; j < M; j++) {
+                if (M1[i][j] == -1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print(M1[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void findAndReplace(int[][] M1, int[][] M2) {
+        int M = M1.length;
+        int N = M2.length;
+
+        for (int i = 0; i <= M - N; i++) {
+            for (int j = 0; j <= M - N; j++) {
+                if (match(M1, M2, i, j)) {
+                    replaceWithAsterisks(M1, i, j, N);
+                    return;
+                }
+            }
+        }
+    }
+
+    public static boolean match(int[][] M1, int[][] M2, int startX, int startY) {
+        int N = M2.length;
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (M1[startX + i][startY + j] != M2[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static void replaceWithAsterisks(int[][] M1, int startX, int startY, int N) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                M1[startX + i][startY + j] = -1; // -1 represents asterisks
+            }
+        }
+    }
+}
