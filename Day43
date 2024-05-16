@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Day43 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine().trim();
+
+        HashMap<Character, Integer> d = new HashMap<>();
+
+        for (int i = 0; i < 26; i++) {
+            d.put(s.charAt(i), i);
+        }
+
+        String rooms = sc.nextLine().trim();
+
+        int t = 0;
+        int temp = 0;
+
+        for (int i = 0; i < rooms.length(); i++) {
+            char room = rooms.charAt(i);
+            t += Math.abs(d.get(room) - temp);
+            temp = d.get(room);
+        }
+
+        System.out.print(t);
+    }
+}
