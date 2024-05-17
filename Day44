@@ -1,0 +1,19 @@
+import java.util.*;
+public class Day44 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        String[] dateParts=sc.nextLine().trim().split("-");
+        
+        int m=sc.nextInt();
+        
+        int month=Integer.parseInt(dateParts[0]);
+        int year=Integer.parseInt(dateParts[1]);
+        
+        year+=(m+month-1)/12;
+        month=(m+month-1)%12 + 1;
+        
+        System.out.printf("%02d-%d",month,year);
+	}
+}
