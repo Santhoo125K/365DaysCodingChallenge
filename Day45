@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Day45 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        ArrayList<Integer> lis = new ArrayList<>();
+        
+        for (int i = 0; i < n; i++) {
+            lis.add(sc.nextInt());
+        }
+        
+        int maxval = Collections.max(lis);
+        int ind = lis.indexOf(maxval);
+        
+        System.out.print(maxval + " ");
+        
+        int a = ind - 1;
+        int b = ind + 1;
+        
+        while (a >= 0 || b < n) {
+            if (a >= 0) {
+                System.out.print(lis.get(a) + " ");
+                a--;
+            }
+            if (b < n) {
+                System.out.print(lis.get(b) + " ");
+                b++;
+            }
+        }
+    }
+}
