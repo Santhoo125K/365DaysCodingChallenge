@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Day46 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int n = Integer.parseInt(scanner.nextLine());
+        List<String[]> list = new ArrayList<>();
+        
+        for (int i = 0; i < n; i++) {
+            String[] entry = scanner.nextLine().trim().split(" ");
+            list.add(entry);
+        }
+        
+        list.sort((a, b) -> {
+            String[] timeA = a[1].split(":");
+            String[] timeB = b[1].split(":");
+            int hourA = Integer.parseInt(timeA[0]);
+            int minuteA = Integer.parseInt(timeA[1]);
+            int hourB = Integer.parseInt(timeB[0]);
+            int minuteB = Integer.parseInt(timeB[1]);
+            
+            if (hourA != hourB) {
+                return hourA - hourB;
+            } else {
+                return minuteA - minuteB;
+            }
+        });
+        
+        for (int i = 0; i < n; i++) {
+            System.out.println(list.get(i)[0] + " " + (i + 1));
+        }
+        
+        scanner.close();
+    }
+}
