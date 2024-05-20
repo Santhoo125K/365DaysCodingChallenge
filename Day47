@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class Day47 {
+
+    public static List<Integer> Primes(int limit) {
+        boolean[] isPrime = new boolean[limit + 1];
+        Arrays.fill(isPrime, true);
+        List<Integer> primes = new ArrayList<>();
+
+        isPrime[0] = false;
+        isPrime[1] = false;
+
+        for (int i = 2; i <= limit; i++) {
+            if (isPrime[i]) {
+                for (int j = i * i; j <= limit; j += i) {
+                    isPrime[j] = false;
+                }
+            }
+        }
+
+        for (int i = 2; i <= limit; i++) {
+            if (isPrime[i]) {
+                primes.add(i);
+            }
+        }
+
+        return primes;
+    }
+
+    public static int findSmallestPrime(int n, List<Integer> primes) {
+        if (primes.contains(n)) return 0;
+
+        for (int prime : primes) {
+            if (prime > n) return prime - n;
+        }
+
+        return 0; 
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt(); 
+        List<Integer> primes = Primes(1000000); 
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
+            int smallest = findSmallestPrime(num, primes);
+            result.append(smallest).append(" ");
+        }
+
+        System.out.println(result.toString().trim());
+        sc.close();
+    }
+}
