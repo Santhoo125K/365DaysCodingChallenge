@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Day49 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+
+        sc.nextLine();
+
+        long sum = 0;
+
+        while(n-- > 0) {
+            String s = sc.next();
+            int num = 0;
+
+            for(byte d: s.getBytes()) {
+                if(k > 0 && d % 2 == 0) {
+                    k--;
+                } else {
+                    num = num * 10 + (d - '0');
+                }
+            }
+            sum += num;
+        }
+        System.out.print(sum);
+    }
+}
