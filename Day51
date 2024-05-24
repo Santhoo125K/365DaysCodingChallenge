@@ -1,0 +1,29 @@
+import java.util.*;
+public class Day51 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        String n=sc.nextLine();
+        int ind=n.indexOf('X');
+        boolean flag=false;
+        int start=0;
+        
+        if(ind==0){
+            start=1;
+        }
+        
+        for(int i=start;i<10;i++){
+            String modified=n.substring(0,ind)+i+n.substring(ind+1);
+            if(Integer.parseInt(modified)%8==0){
+                System.out.println(i);
+                flag=true;
+                break;
+            }
+        }
+        
+        if(!flag){
+            System.out.println(-1);
+        }
+	}
+}
