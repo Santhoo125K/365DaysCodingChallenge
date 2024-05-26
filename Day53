@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Day53 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] arr = sc.nextLine().split(" ");
+
+        int maxlen = 0;
+
+        for (String s : arr) {
+            maxlen = Math.max(maxlen, s.length());
+        }
+
+        for (int i = 0; i < maxlen; i++) {
+            for (String s : arr) {
+                for ( int j = 0; j < s.length(); j++){
+                    System.out.print(j < s.length() - i ? s.charAt(j) : "*");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
