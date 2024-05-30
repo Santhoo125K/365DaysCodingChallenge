@@ -1,0 +1,14 @@
+import java.util.*;
+public class Day57 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt(), y = sc.nextInt(), z = sc.nextInt();
+        
+        int lines = (int)Math.ceil((double)x/z);
+        int pages = (int)Math.ceil((double)lines/y);
+        
+        System.out.println(pages);
+        System.out.print(lines);
+	}
+}
