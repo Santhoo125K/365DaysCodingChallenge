@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Day59 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int R = scanner.nextInt(), C = scanner.nextInt();
+        int X = scanner.nextInt(), Y = scanner.nextInt();
+        int M = scanner.nextInt(), N = scanner.nextInt();
+
+        int totalMoves = calculateBishopMoves(R, C, X, Y, M, N);
+
+        System.out.println(totalMoves);
+    }
+
+    private static int calculateBishopMoves(int R, int C, int X, int Y, int M, int N) {
+        int moves = 0;
+
+        int[] dX = {-1, 1, -1, 1};
+        int[] dY = {-1, -1, 1, 1};
+
+        for (int i = 0; i < 4; i++) {
+            int newX = X + dX[i];
+            int newY = Y + dY[i];
+
+            while (isInBounds(newX, newY, R, C) && !(newX == M && newY == N)) {
+                moves++;
+                newX += dX[i];
+                newY += dY[i];
+            }
+        }
+
+        return moves;
+    }
+
+    private static boolean isInBounds(int x, int y, int R, int C) {
+        return x >= 0 && x < R && y >= 0 && y < C;
+    }
+
+}
