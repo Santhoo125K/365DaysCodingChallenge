@@ -1,0 +1,28 @@
+import java.util.*;
+public class Day60 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt(), y = sc.nextInt();
+        
+        String strX = Integer.toString(x), strY = Integer.toString(y);
+        
+        char maxDigitX = findMaxDigits(strX), maxDigitY = findMaxDigits(strY);
+        
+        String modifiedX = strX.replace(maxDigitX, maxDigitY);
+        
+        System.out.print(Integer.parseInt(modifiedX) + y);
+	}
+	
+	private static char findMaxDigits(String number){
+	    char maxDigit = '0';
+	    for(char digit : number.toCharArray()){
+	        if(digit > maxDigit){
+	            maxDigit = digit;
+	        }
+	    }
+	    
+	    return maxDigit;
+	}
+}
