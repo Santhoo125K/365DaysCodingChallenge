@@ -1,0 +1,31 @@
+import java.util.*;
+public class Day61 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), t = sc.nextInt();
+        
+        long[] row = new long[n];
+        for(int i = 0; i < n; i++){
+            row[i] = n - i;
+        }
+        
+        printArray(row);
+        
+        for(int i = 1; i < t; i++){
+            long[] nextRow = new long[n];
+            for(int j = 0; j < n; j++){
+                nextRow[j] = row[n - 1 - j] * 2;
+            } 
+            printArray(nextRow);
+            row = nextRow;
+        }
+	}
+	
+	private static void printArray(long[] arr){
+	    for(long value : arr){
+	        System.out.print(value + " ");
+	    }
+	    System.out.println();
+	}
+}
