@@ -1,0 +1,32 @@
+import java.util.*;
+public class Day62 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt(sc.nextLine());
+        
+        LinkedHashMap<String, Integer> countryCount = new LinkedHashMap<>();
+        
+        for(int i = 0; i < n; i++){
+            String in = sc.nextLine();
+            String[] input = in.split(" ");
+            String country = input[input.length - 1];
+            
+            countryCount.put(country, countryCount.getOrDefault(country, 0) + 1);
+        }
+        
+        List<Map.Entry<String, Integer>> countryList = new ArrayList<>(countryCount.entrySet());
+        
+        countryList.sort((entry1, entry2) -> {
+            int valueComp = Integer.compare(entry2.getValue(), entry1.getValue());
+            if(valueComp != 0){
+                return valueComp;
+            }
+            return 0;
+        });
+        
+        for(Map.Entry<String, Integer> entry : countryList){
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+	}
+}
