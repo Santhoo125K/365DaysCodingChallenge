@@ -1,0 +1,23 @@
+import java.util.*;
+public class Day63 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        long[] result = new long[n];
+        
+        for(int i = 0; i < n; i++){
+            int x = sc.nextInt();
+            
+            //Toggle the bits of the 32-bit integer
+            long toggled = ~x & 0xFFFFFFFFL;
+            
+            result[i] = toggled;
+        }
+        
+        for(long res : result){
+            System.out.println(res);
+        }
+	}
+}
