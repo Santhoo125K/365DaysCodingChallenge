@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Day78 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        sc.nextLine(); 
+        
+        String[] ar = sc.nextLine().toLowerCase().split(" ");
+        
+        int count = 1;
+        
+        for (int i = 1; i < n; i++) {
+            if (ar[i].equals(ar[i - 1])) {
+                count++;
+            } else {
+                count = 1;
+            }
+            
+            if (count >= k) {
+                System.out.print("yes");
+                return;
+            }
+        }
+        
+        System.out.print("no");
+    }
+
+}
