@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int x = sc.nextInt();
+
+        int sum = n;
+
+        for (int i = 0; i < x; i++) {
+            char[] num = (sum + "").toCharArray();
+            sum = 0;
+
+            for (int j = 0; j < n; j++) {
+                System.out.print(num[j % num.length]);
+                sum += num[j % num.length] - '0';
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
