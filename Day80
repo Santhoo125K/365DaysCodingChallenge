@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Day80 {
+      public static void main(String[] args) {
+          Scanner sc=new Scanner(System.in);
+
+          int n=sc.nextInt();
+          int t;
+          int[] even=new int[n];
+          int ind=0;
+
+          while(n>0){
+              t=sc.nextInt();
+                  if(t%2==0){
+                      even [ind++]=t;
+                  }
+                  n--;
+          }
+          
+          long res even[0], temp;
+          
+          for(int i=1;i<ind;i++){
+              long a res,b=even[i]; 
+                  while(b!=0){
+                      temp=b;
+                      b=a%b;
+                      a=temp;
+                  }
+              res (res even[i])/a;
+          }
+          System.out.print(res);
+      }
+}
