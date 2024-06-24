@@ -1,0 +1,38 @@
+import java.util.*;
+
+public class Day82 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        sc.nextLine();
+        String[][] mat = new String[n][1];
+
+        for (int i = 0; i < n; i++) {
+            mat[i] = sc.nextLine().split(" ");
+        }
+
+        for (int i = 0; i < n; i++) {
+            int st = 0, en = n - 1, flag = 1;
+
+            while (st < n - i) {
+                if (!mat[st][i].equals(mat[n - i - 1][en])) {
+                    flag = 0;
+                    break;
+                }
+                st++;
+                en--;
+            }
+
+            if (flag == 1) {
+                for (int j = 0; j < n - i; j++) {
+                    System.out.print(mat[j][i]);
+                }
+                for (int j = i + 1; j < n; j++) {
+                    System.out.print(mat[n - i - 1][j]);
+                }
+                System.out.println();
+            }
+        }
+    }
+}
