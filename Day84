@@ -1,0 +1,36 @@
+import java.util.*;
+public class Day84 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt() , n = sc.nextInt();
+        
+        ArrayList<Integer> ar = new ArrayList<Integer>();
+        for(int i =0 ; i<m;i++){
+            ar.add(sc.nextInt());
+        }
+        
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        for(int i=0;i<n;i++){
+            int value = arr[i];
+            Iterator<Integer> it = ar.iterator();
+            while(it.hasNext()){
+                int val = it.next();
+                if(val==value){
+                    System.out.print(val+ " ");
+                    it.remove();
+                }
+            }
+        }
+        
+        Collections.sort(ar);
+        for(int val: ar){
+            System.out.print(val+" ");
+        }
+        
+	}
+}
