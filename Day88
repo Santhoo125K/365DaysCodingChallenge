@@ -1,0 +1,64 @@
+import java.util.*;
+public class Day88 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String s1=sc.next();
+        String s2=sc.next();
+        String s3=sc.next();
+        String s4=sc.next();
+        
+        int len = s1.length();
+        char[][] mat = new char[len][len];
+        
+        for(int i=0;i<len;i++){
+            for(int j=0;j<len;j++){
+                if(sc.hasNext()){
+                    mat[i][j] = sc.next().charAt(0);
+                }
+            }
+        }
+        
+        String[] strs = {s1, s2, s3, s4};
+        
+        StringBuilder firstRow = new StringBuilder();
+        StringBuilder lastRow = new StringBuilder();
+        StringBuilder firstCol = new StringBuilder();
+        StringBuilder lastCol = new StringBuilder();
+        
+        for(int i=0;i<len;i++){
+            firstRow.append(mat[0][i]);
+            lastRow.append(mat[len-1][i]);
+            firstCol.append(mat[i][0]);
+            lastCol.append(mat[i][len-1]);
+        }
+        
+        boolean str1=false, str2=false, str3=false, str4=false;
+        
+        for(String st : strs){
+            
+            if(firstRow.toString().contains(st) || firstRow.reverse().toString().contains(st)){
+                str1=true;
+            }
+            
+            if(lastRow.toString().contains(st) || lastRow.reverse().toString().contains(st)){
+                str2=true;
+            }
+            
+            if(firstCol.toString().contains(st) || firstCol.reverse().toString().contains(st)){
+                str3=true;
+            }
+            
+            if(lastCol.toString().contains(st) || lastCol.reverse().toString().contains(st)){
+                str4=true;
+            }
+        }
+        
+        if(str1 && str2 && str3 && str4){
+            System.out.print("Yes");
+        }else{
+            System.out.print("No");
+        }
+	}
+}
