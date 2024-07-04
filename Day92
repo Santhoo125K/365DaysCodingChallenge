@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int k = sc.nextInt();
+
+        sc.close();
+
+        int minsum = Integer.MAX_VALUE, maxsum = Integer.MIN_VALUE;
+        int cursum = 0;
+
+        for (int i = 0; i < k; i++) {
+            cursum += arr[i];
+        }
+
+        minsum = cursum;
+        maxsum = cursum;
+
+        int minind = 0, maxind = 0;
+
+        for (int i = k; i < n; i++) {
+            cursum += arr[i] - arr[i - k];
+
+            if (cursum < minsum) {
+                minsum = cursum;
+                minind = i - k + 1;
+            }
+
+            if (cursum > maxsum) {
+                maxsum = cursum;
+                maxind = i - k + 1;
+            }
+        }
+
+        for (int i = 0; i < k; i++) {
+            System.out.print(arr[minind + i] + " ");
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < k; i++) {
+            System.out.print(arr[maxind + i] + " ");
+        }
+    }
+}
