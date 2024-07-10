@@ -1,0 +1,40 @@
+import java.util.*;
+
+class Day98 {
+    public static void SortZOT(int[] nums) {
+        int low = 0;
+        int mid = 0;
+        int high = nums.length - 1;
+        
+        while(mid <= high) {
+            switch(nums[mid]) {
+                case 0:
+                    swap(nums, low++, mid++);
+                    System.out.println(Arrays.toString(nums));
+                    break;
+                case 1:
+                    mid++;
+                    System.out.println(Arrays.toString(nums));
+                    break;
+                case 2:
+                    swap(nums, mid, high--);
+                    System.out.println(Arrays.toString(nums));
+                    break;
+            }
+        }
+    }
+    
+    public static void swap(int arr[], int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    
+    public static void main(String[] args) {
+        int nums1[] = {0, 1, 2, 2, 1, 0, 0, 2, 0, 1, 1, 0};
+        System.out.println("Original Array: " + Arrays.toString(nums1));
+        SortZOT(nums1);
+        System.out.println("-------------------------------------");
+        System.out.print("Sorted Array: " + Arrays.toString(nums1));
+    }
+}
