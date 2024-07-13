@@ -1,42 +1,25 @@
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
-        int len = nums.length; 
-        if(len == 3) {return nums[0] + nums[1] + nums[2];}
-        Arrays.sort(nums);
-        int ans = nums[0] + nums[1] + nums[2];
-        if(ans >= target) {return ans;}
-        int max = nums[len - 1] + nums[len - 2] + nums[len - 3];
-        if(max <= target) {return max;}
-        int last = nums[0];
-        int left, right, sum, num;
-        int dist = Math.abs(ans - target);
-
-        for(int i = 0; i < len - 2; i++){
-            if (i == last && nums[i] == last)
-                continue;
-            num = nums[i];
-            last = num;
-            left = i + 1;
-            right = len - 1;
-            while(left < right){
-                sum = num + nums[left] + nums[right];
-                if (sum == target) return sum;
-                if(Math.abs(sum - target) < dist){
-                    ans = sum;
-                    dist = Math.abs(ans - target);
-                }
-                if(sum < target){ 
-                    while(left < right && nums[left] == nums[left + 1])
-                        left++;
-                    left++;
-                }
-                else{
-                     while(left < right && nums[right] == nums[right - 1])
-                        right--;
-                    right--;
-                }   
-            }
-        }
-        return ans;
+        byte[] occurrences = new byte[2001];
+        for (int num : nums)
+            occurrences[num + 1000]++;
+        for (int count = 0, index = 0; count < 2001; count++)
+            for (int repetitions = occurrences[count]; repetitions-- > 0;)
+                nums[index++] = count - 1000;
+        int low = 0, high = nums.length - 1, closestSum = Integer.MAX_VALUE;
+        for (int minDiff = target - nums[high - 1] - nums[high], end = high - 2; low < end
+                && nums[low + 1] <= minDiff; low++)
+            ;
+        for (int maxDiff = target - nums[low] - nums[low + 1], end = low + 2; high > end
+                && nums[high - 1] >= maxDiff; high--)
+            ;
+        for (int end = high - 1; low < end; low++)
+            for (int sum, i = high, j = low + 1; j < i;)
+                if ((sum = nums[low] + nums[i] + nums[j]) == target)
+                    return sum;
+                else if ((sum > target ? sum - target - i + i-- : target - sum - j + j++) < Math
+                        .abs(closestSum - target))
+                    closestSum = sum;
+        return closestSum;
     }
 }
