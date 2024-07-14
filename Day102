@@ -1,0 +1,39 @@
+public class Day102{
+    public static void main(String[] args) {
+        String input1 = "a111b10";
+        String input2 = "b3c6d15";
+        
+        System.out.println(expandString(input1)); 
+        System.out.println(expandString(input2)); 
+    }
+
+    public static String expandString(String input) {
+        StringBuilder result = new StringBuilder();
+        StringBuilder number = new StringBuilder();
+        char currentChar = '\0';
+        
+        for (char ch : input.toCharArray()) {
+            if (Character.isDigit(ch)) {
+                number.append(ch);
+            } else {
+                if (currentChar != '\0') {
+                    int repeat = Integer.parseInt(number.toString());
+                    for (int i = 0; i < repeat; i++) {
+                        result.append(currentChar);
+                    }
+                }
+                currentChar = ch;
+                number.setLength(0); 
+            }
+        }
+        
+        if (currentChar != '\0') {
+            int repeat = Integer.parseInt(number.toString());
+            for (int i = 0; i < repeat; i++) {
+                result.append(currentChar);
+            }
+        }
+        
+        return result.toString();
+    }
+}
