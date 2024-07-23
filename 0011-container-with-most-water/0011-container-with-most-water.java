@@ -1,19 +1,18 @@
 class Solution {
     public int maxArea(int[] height) {
-        int max_area = 0;
-      int a_pointer  = 0;
-      int b_pointer =   height.length-1;
-
-
-      while(a_pointer<b_pointer){
-        if(height[a_pointer]<height[b_pointer]){
-            max_area=Math.max(max_area,height[a_pointer]*(b_pointer-a_pointer));
-            a_pointer++;
-        }else{
-            max_area=Math.max(max_area,height[b_pointer]*(b_pointer-a_pointer));
-            b_pointer--;
+        int start = 0, ans = 0, end = height.length - 1;
+        while (start < end) {
+            int h=Math.min(height[start],height[end]);
+            int water=(end-start)*h;
+            ans=Math.max(ans,water);
+            while(height[start]<=h && start<end){
+                start++;
+            }
+            while(height[end]<=h && start<end){
+                end--;
+            
+            }
         }
-      }
-    return max_area;
+        return ans;
     }
 }
