@@ -1,0 +1,52 @@
+import java.util.*;
+
+class Day117{
+    public static class Monster{
+        int power;
+        int bonus;
+        
+        Monster(int power, int bonus){
+            this.power=power;
+            this.bonus=power;
+        }
+    }
+    
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int NoOfMon = sc.nextInt();
+        int initialExp = sc.nextInt();
+        
+        int power[] = new int[NoOfMon];
+        
+        for(int i=0;i<NoOfMon;i++){
+            power[i]=sc.nextInt();
+        }
+        
+        int bonusExp[] = new int[NoOfMon];
+        
+        for(int i=0;i<NoOfMon;i++){
+            bonusExp[i]=sc.nextInt();
+        }
+        
+        List<Monster> mons = new ArrayList<>();
+        
+        for(int i=0;i<NoOfMon;i++){
+            mons.add(new Monster(power[i], bonusExp[i]));
+        }
+        
+        Collections.sort(mons,Comparator.comparingInt(m->m.power));
+        
+        int count=0;
+        for(Monster monst: mons){
+            if(initialExp >= monst.power){
+                count++;
+                initialExp+=monst.bonus;
+            }else{
+                break;
+            }
+        }
+        
+        System.out.print(count);
+    }
+}
