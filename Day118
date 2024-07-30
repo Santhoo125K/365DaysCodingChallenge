@@ -1,0 +1,43 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int size = sc.nextInt();
+        
+        int dips[] = new int[size];
+        
+        for (int i = 0; i < size; i++) {
+            dips[i] = sc.nextInt();
+        }
+        
+        int left[] = new int[size];
+        int leftmax = dips[0];
+        left[0] = leftmax;
+        
+        for (int i = 1; i < size; i++) {
+            leftmax = Math.max(leftmax, dips[i]);
+            left[i] = leftmax;
+        }
+        
+        int right[] = new int[size];
+        int rightmax = dips[size - 1];
+        right[size - 1] = rightmax;
+        
+        for (int i = size - 2; i >= 0; i--) {
+            rightmax = Math.max(rightmax, dips[i]);
+            right[i] = rightmax;
+        }
+        
+        int ans = 0;
+        for (int i = 0; i < size; i++) {
+            int tp = Math.min(left[i], right[i]) - dips[i];
+            if (tp > 0) {
+                ans += tp;
+            }
+        }
+        
+        System.out.print(ans);
+    }
+}
