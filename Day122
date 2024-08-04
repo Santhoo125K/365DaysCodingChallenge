@@ -1,0 +1,42 @@
+import java.util.*;
+
+class Main {
+
+    public static List<Character> smallestString(List<Character> al) {
+        for (int i = 1; i < al.size(); i++) {
+            char current = al.get(i);
+            char pre = al.get(i - 1);
+
+            if (current == '0' && pre == '1') {
+                al.remove(i - 1);
+                smallestString(al);
+                break;
+            }
+        }
+
+        return al;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.next();
+
+        List<Character> al = new ArrayList<>();
+
+        for (char c : str.toCharArray()) {
+            al.add(c);
+        }
+
+        List<Character> resultList = smallestString(al);
+        
+        StringBuilder sb = new StringBuilder();
+        for (char c : resultList) {
+            sb.append(c);
+        }
+        
+        String resultString = sb.toString();
+        
+        System.out.println(resultString);
+    }
+}
