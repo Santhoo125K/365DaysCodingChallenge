@@ -14,23 +14,21 @@
  * }
  */
 class Solution {
+    boolean unbalanced = false;
     public boolean isBalanced(TreeNode root) {
-        return getHeight(root) != -1;
+        recur(root);
+        return !unbalanced;
     }
 
-    private int getHeight(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        int leftHeight = getHeight(root.left);
-        int rightHeight = getHeight(root.right);
+    public int recur(TreeNode root){
+        if(root == null) return 0;
+        if(unbalanced == true) return 0;
+        int left = recur(root.left) + 1;
+        int right = recur(root.right) + 1;
 
-        if (leftHeight == -1 || rightHeight == -1) {
-            return -1;
+        if(Math.abs(left - right) > 1){
+            unbalanced = true;
         }
-        if (Math.abs(leftHeight - rightHeight) > 1) {
-            return -1;
-        }
-        return Math.max(leftHeight, rightHeight) + 1;
+        return Math.max(left, right);
     }
 }
