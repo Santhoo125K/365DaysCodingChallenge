@@ -18,9 +18,7 @@ class Solution {
         
         if(root.val == 1){
             return true;
-        }
-        
-        if(root.val == 0){
+        }if(root.val == 0){
             return false;
         }
         
