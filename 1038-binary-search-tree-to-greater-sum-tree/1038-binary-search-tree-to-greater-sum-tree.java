@@ -14,7 +14,9 @@
  * }
  */
 class Solution {
+    
     public int sum=0;
+    
     public TreeNode bstToGst(TreeNode root) {
         revInOrder(root);
         return root;
@@ -27,8 +29,10 @@ class Solution {
         }
         
         revInOrder(node.right);
+        
         sum+=node.val;
         node.val = sum;
+        
         revInOrder(node.left);
         
         
