@@ -1,6 +1,5 @@
 class Solution {
     public boolean areSentencesSimilar(String sentence1, String sentence2) {
-        // Split both sentences into words
         String[] words1 = sentence1.split(" ");
         String[] words2 = sentence2.split(" ");
         
@@ -17,7 +16,7 @@ class Solution {
             j++;
         }
         
-        // If the sum of matched prefix and suffix words is at least the length of the shorter sentence
-        return i + j >= Math.min(n1, n2);
+        // After matching the prefix and suffix, the remaining words must either form the middle sentence or be empty.
+        return i + j == Math.min(n1, n2);
     }
 }
