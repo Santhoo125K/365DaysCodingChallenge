@@ -9,4 +9,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1537-maximum-score-after-splitting-a-string) |
+## Linked List
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0234-palindrome-linked-list) |
+## Two Pointers
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0234-palindrome-linked-list) |
+## Stack
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0234-palindrome-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0234-palindrome-linked-list) |
 <!---LeetCode Topics End-->
