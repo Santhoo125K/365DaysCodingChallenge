@@ -52,4 +52,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+## Greedy
+|  |
+| ------- |
+| [2509-minimize-xor](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2509-minimize-xor) |
+## Bit Manipulation
+|  |
+| ------- |
+| [2509-minimize-xor](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2509-minimize-xor) |
 <!---LeetCode Topics End-->
