@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## String Matching
@@ -60,4 +61,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2509-minimize-xor](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2509-minimize-xor) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
+## Brainteaser
+|  |
+| ------- |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
 <!---LeetCode Topics End-->
