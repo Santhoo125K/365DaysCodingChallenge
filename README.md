@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
+| [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## String Matching
@@ -66,4 +67,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
+## Hash Table
+|  |
+| ------- |
+| [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
+## Matrix
+|  |
+| ------- |
+| [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
 <!---LeetCode Topics End-->
