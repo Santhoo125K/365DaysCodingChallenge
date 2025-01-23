@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
@@ -74,5 +75,22 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
+## Depth-First Search
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
+## Union Find
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
+## Counting
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 <!---LeetCode Topics End-->
