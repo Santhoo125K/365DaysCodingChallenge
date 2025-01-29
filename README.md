@@ -80,17 +80,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0684-redundant-connection) |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0684-redundant-connection) |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 ## Union Find
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0684-redundant-connection) |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 ## Counting
 |  |
 | ------- |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
+## Graph
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0684-redundant-connection) |
 <!---LeetCode Topics End-->
