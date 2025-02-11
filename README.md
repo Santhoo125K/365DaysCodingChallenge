@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1537-maximum-score-after-splitting-a-string) |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3447-clear-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3447-clear-digits) |
@@ -26,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0234-palindrome-linked-list) |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [3447-clear-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3447-clear-digits) |
 ## Recursion
 |  |
@@ -108,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3447-clear-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3447-clear-digits) |
 ## Design
