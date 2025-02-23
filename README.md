@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [2434-design-a-number-container-system](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2434-design-a-number-container-system) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
@@ -142,4 +144,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2456-construct-smallest-number-from-di-string](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2456-construct-smallest-number-from-di-string) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+## Tree
+|  |
+| ------- |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+## Binary Tree
+|  |
+| ------- |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 <!---LeetCode Topics End-->
