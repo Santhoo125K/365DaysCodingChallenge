@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
@@ -156,4 +157,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 <!---LeetCode Topics End-->
