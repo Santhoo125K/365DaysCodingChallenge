@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2691-count-vowel-strings-in-ranges) |
+| [3227-find-missing-and-repeated-values](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3227-find-missing-and-repeated-values) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -91,12 +92,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2434-design-a-number-container-system](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2434-design-a-number-container-system) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
+| [3227-find-missing-and-repeated-values](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3227-find-missing-and-repeated-values) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Matrix
 |  |
 | ------- |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
+| [3227-find-missing-and-repeated-values](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3227-find-missing-and-repeated-values) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -167,4 +170,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
+## Math
+|  |
+| ------- |
+| [3227-find-missing-and-repeated-values](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3227-find-missing-and-repeated-values) |
 <!---LeetCode Topics End-->
