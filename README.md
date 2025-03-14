@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [1335-maximum-candies-allocated-to-k-children](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1396-count-servers-that-communicate](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1396-count-servers-that-communicate) |
 | [1524-string-matching-in-an-array](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1524-string-matching-in-an-array) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
@@ -179,5 +180,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [1335-maximum-candies-allocated-to-k-children](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [3643-zero-array-transformation-ii](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3643-zero-array-transformation-ii) |
 <!---LeetCode Topics End-->
