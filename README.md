@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2265-partition-array-according-to-given-pivot](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2533-bitwise-xor-of-all-pairings) |
+| [2665-minimum-time-to-repair-cars](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2665-minimum-time-to-repair-cars) |
 | [2685-first-completely-painted-row-or-column](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2685-first-completely-painted-row-or-column) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3227-find-missing-and-repeated-values](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3227-find-missing-and-repeated-values) |
@@ -181,5 +182,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [2665-minimum-time-to-repair-cars](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/2665-minimum-time-to-repair-cars) |
 | [3643-zero-array-transformation-ii](https://github.com/Santhoo125K/365DaysCodingChallenge/tree/master/3643-zero-array-transformation-ii) |
 <!---LeetCode Topics End-->
